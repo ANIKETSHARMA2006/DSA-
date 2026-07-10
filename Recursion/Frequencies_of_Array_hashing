@@ -1,0 +1,14 @@
+class Solution {
+public:
+    vector<vector<int>> countFrequencies(vector<int>& nums) {
+        unordered_map<int,int> fraq;
+        for(int num:nums){
+            fraq[num]++;
+        }
+        vector<vector<int>> ans;
+        for(auto it : fraq){
+            ans.push_back({it.first,it.second});
+        }
+        return ans;
+    }
+};

@@ -2,7 +2,7 @@
 using namespace std;
 
     int largestElement(int arr[], int n){
-        int maxval=0;
+        int maxval=arr[0];
         for (int i = 0; i < n; i++){
             if (arr[i]>maxval){
                 maxval=arr[i];
